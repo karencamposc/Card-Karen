@@ -1,5 +1,15 @@
-* {
-    background-color: rgb(226, 203, 222);
+body {
+    background-image:url("fondo.jpg");
+    position: relative;
+    z-index: 1;   
+}
+p{
+    text-align: center; /* alinea el texto de forma centrada */ 
+    font-size: 30px;/* tamaño de la fuente */ 
+    color: rgb(88, 55, 86);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: relative;
+    z-index: 2;
 }
 section {
     position: relative; /* le dice a un elemento que se mueva con respecto a otro elemento. (activa la opcion de top) mas abajo se explica) */
@@ -8,6 +18,7 @@ section {
     margin: 0 auto;
     top: 90px; /* este estilo se activa con una posicion relativa, indicanto un margen superior*/
     border: 5px solid rgb(184, 152, 206); /* agrega un corde de 2px color blanco en forma de linea */
+    
 }
 
 .avatar {
@@ -17,6 +28,8 @@ section {
     display: block; /* Le dice a cada elemento como debe comportarse como bloque o lineal*/
     margin: 0 auto; 
     margin-top: 20px;
+    position: relative;
+    z-index: 2;
     
 }
 
@@ -25,49 +38,66 @@ section {
     font-size: 45px;/* tamaño de la fuente */ 
     color: rgb(88, 55, 86);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: relative;
+    z-index: 2;
 }
 
 .links {
-    padding-top: 30px;
+    padding-top: 20px;
     width: 30%;
     margin: 0 auto; /*  Centra un elemento de tipo bloque */
+    position: relative;
+    z-index: 2;
 }
 
 a {
     padding: 5px;
     height: 30px;
     margin-bottom: 10px;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 500;
     font-family: Georgia, 'Times New Roman', Times, serif;
     border-radius: 20px;
     color: rgb(3, 3, 3);
     display: block;
     text-align: center;
+    position: relative;
+    z-index: 2;
+    text-decoration: none;
 }
 
 .instagram {
-    background-color: rgb(251, 144, 105);
+    background:radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    position: relative;
+    z-index: 1;
 }
 .instagram:hover {
-    background-color: orangered;
     position: relative;
     bottom: 1px;
+    z-index: 2;
+    color: white;
 }
 
 .facebook {
-    background-color: rgb(142, 164, 254);
+    background:radial-gradient(circle at 30% 107%, #fdf497 0%, #97aafd 5%, #3b6dda 30%, #135fee 60%, #03195c 90%);
+    position: relative;
+    z-index: 2;
+    
 }
 .facebook:hover {
     background-color: rgb(38, 78, 237);
     position: relative;
     bottom: 1px;
+    color: white
 }
 
 .linkedin {
     background-color: rgb(99, 123, 220);
+    position: relative;
+    z-index: 2;
 }
 
-.twitter {
+.linkedin:hover {
     background-color: rgb(48, 200, 255);
+    color: white;
 }
